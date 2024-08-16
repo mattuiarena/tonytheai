@@ -1,0 +1,889 @@
+<!DOCTYPE html><!-- Last Published: Mon Jul 22 2024 15:36:22 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-page="664171fa923a2686fc4baa2a" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>TONY AI - Your Home Health Care Agency Companion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/tony.css" rel="stylesheet" type="text/css" />
+
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+
+  <style>
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+        /* Make text look crisper and more legible in all browsers */
+        body {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+        }
+
+        /* Focus state style for keyboard navigation for the focusable elements */
+        *[tabindex]:focus-visible,
+        input[type="file"]:focus-visible {
+          outline: 0.125rem solid #4d65ff;
+          outline-offset: 0.125rem;
+        }
+
+        /* Set color style to inherit */
+        .inherit-color * {
+          color: inherit;
+        }
+
+        /* Get rid of top margin on first element in any rich text element */
+        .w-richtext> :not(div):first-child,
+        .w-richtext>div:first-child> :first-child {
+          margin-top: 0 !important;
+        }
+
+        /* Get rid of bottom margin on last element in any rich text element */
+        .w-richtext>:last-child,
+        .w-richtext ol li:last-child,
+        .w-richtext ul li:last-child {
+          margin-bottom: 0 !important;
+        }
+
+
+        /* Make sure containers never lose their center alignment */
+        .container-medium,
+        .container-small,
+        .container-large {
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
+
+        /* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+        /*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+        /* Apply "..." after 3 lines of text */
+        .text-style-3lines {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+
+        /* Apply "..." after 2 lines of text */
+        .text-style-2lines {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        /* Adds inline flex display */
+        .display-inlineflex {
+          display: inline-flex;
+        }
+
+        /* These classes are never overwritten */
+        .hide {
+          display: none !important;
+        }
+
+        @media screen and (max-width: 991px) {
+
+          .hide,
+          .hide-tablet {
+            display: none !important;
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          .hide-mobile-landscape {
+            display: none !important;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          .hide-mobile {
+            display: none !important;
+          }
+        }
+
+        .margin-0 {
+          margin: 0rem !important;
+        }
+
+        .padding-0 {
+          padding: 0rem !important;
+        }
+
+        .spacing-clean {
+          padding: 0rem !important;
+          margin: 0rem !important;
+        }
+
+        .margin-top {
+          margin-right: 0rem !important;
+          margin-bottom: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-top {
+          padding-right: 0rem !important;
+          padding-bottom: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-right {
+          margin-top: 0rem !important;
+          margin-bottom: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-right {
+          padding-top: 0rem !important;
+          padding-bottom: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-bottom {
+          margin-top: 0rem !important;
+          margin-right: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-bottom {
+          padding-top: 0rem !important;
+          padding-right: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-left {
+          margin-top: 0rem !important;
+          margin-right: 0rem !important;
+          margin-bottom: 0rem !important;
+        }
+
+        .padding-left {
+          padding-top: 0rem !important;
+          padding-right: 0rem !important;
+          padding-bottom: 0rem !important;
+        }
+
+        .margin-horizontal {
+          margin-top: 0rem !important;
+          margin-bottom: 0rem !important;
+        }
+
+        .padding-horizontal {
+          padding-top: 0rem !important;
+          padding-bottom: 0rem !important;
+        }
+
+        .margin-vertical {
+          margin-right: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-vertical {
+          padding-right: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        /* Custom Styles */
+        .navbar.w-nav {
+          width: 100% !important;
+        }
+
+        /* Custom Marquee Animation */
+        .company-marquee_group {
+          transform: translateX(0%);
+          animation: marqueeLeftScroll 48s linear 0s infinite;
+        }
+
+        .investors-marquee_group {
+          transform: translateX(0%);
+          animation: marqueeLeftScroll 32s linear 0s infinite;
+        }
+
+        .tools-marquee_inner.is-left {
+          transform: translateX(0%);
+          animation: marqueeLeftScroll 48s linear 0s infinite;
+        }
+
+        .tools-marquee_inner.is-right {
+          transform: translateX(-100%);
+          animation: marqueeRightScroll 48s linear 0s infinite;
+        }
+
+        @keyframes marqueeLeftScroll {
+          0% {
+            transform: translateX(0%);
+          }
+
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+
+        @keyframes marqueeRightScroll {
+          0% {
+            transform: translateX(-100%);
+          }
+
+          100% {
+            transform: translateX(0%);
+          }
+        }
+      </style>
+    </div>
+    <main class="main-wrapper">
+      <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium"
+        data-w-id="3afc22bf-9d5b-2791-c9e8-db644a750845" role="banner" data-no-scroll="1" data-duration="0"
+        data-doc-height="1">
+        <div id="w-node-_3afc22bf-9d5b-2791-c9e8-db644a750846-4a750845" class="inner-styles is-navbar w-embed">
+          <style>
+            .navbar_dropdown-menu.is-disabled .navbar_dropdown-menu-icon {
+              color: var(--gray--400);
+            }
+
+            .navbar_dropdown-menu .navbar_dropdown-menu-desc {
+              color: var(--gray--700);
+            }
+
+            .navbar_dropdown-menu:not(.is-disabled):hover {
+              color: var(--purple--600);
+              background-color: var(--purple--bg-light);
+            }
+
+            .navbar_dropdown-menu:not(.is-disabled):hover .navbar_dropdown-menu-desc {
+              color: var(--purple--600);
+            }
+
+            .navbar_link.w-dropdown-toggle.w--open {
+              background-color: var(--purple--500);
+              color: var(--white);
+            }
+
+            .navbar_link.w-dropdown-toggle.w--open .svg-icon {
+              transform: rotate(180deg);
+            }
+
+            @media screen and (max-width: 991px) {
+              .navbar_dropdown-menu:not(.is-disabled):hover {
+                background-color: transparent;
+              }
+            }
+
+            .navbar.w-nav.is-white {
+              background-image: none !important;
+              background-color: var(--white) !important;
+            }
+
+            .navbar.w-nav.is-white .navbar_brand {
+              filter: brightness(100%) !important;
+            }
+
+            .navbar.w-nav.is-white .navbar_brand {
+              filter: brightness(100%) !important;
+            }
+
+            .navbar.w-nav.is-white .navbar_link {
+              color: var(--gray--700) !important;
+            }
+
+            .navbar.w-nav.is-white .navbar_link:hover {
+              color: var(--gray--700) !important;
+              background-color: var(--purple--bg-light) !important;
+            }
+
+            .navbar.w-nav.is-white .navbar_link.w--current,
+            .navbar.w-nav.is-white .navbar_link.w--open {
+              color: var(--white) !important;
+              background-color: var(--purple--500) !important;
+            }
+
+            .navbar.w-nav.is-white .navbar_link .svg-icon {
+              color: var(--purple--600) !important;
+            }
+
+            .navbar.w-nav.is-white .navbar_link.w--open .svg-icon {
+              color: var(--white) !important;
+            }
+
+            .navbar.w-nav.is-white .button-group.is-navbar-cta .button.is-text {
+              color: var(--gray--700) !important;
+            }
+
+            .navbar.w-nav.is-white .button-group.is-navbar-cta .button.is-secondary {
+              background-color: var(--purple--600) !important;
+              color: var(--white) !important;
+              box-shadow: 0 0 0 1px var(--purple--600), 0 1px 2px 0 rgba(66, 48, 125, 0.5) !important;
+            }
+
+            .navbar.w-nav.is-white .button-group.is-navbar-cta .button.is-secondary:hover {
+              background-color: var(--purple--700) !important;
+            }
+          </style>
+        </div>
+        <div class="container-large w-container">
+          <div class="navbar_inner-wrap">
+            <div class="navbar_left-col"><a href="#home" aria-current="page"
+                class="navbar_brand w-nav-brand w--current"><img src="images/Tony-Logo-Prime.png" style="height: 119%;"
+                  loading="eager" alt="" class="image-full is-w-auto" /></a>
+              <link rel="prerender" href="/" />
+            </div>
+            <div class="navbar_middle-col">
+              <nav role="navigation" class="navbar_menu w-nav-menu">
+
+                <a href="#how" class="navbar_link w-nav-link">How it Works</a><a href="#action"
+                  class="navbar_link w-nav-link">See in Action</a><a href="#product" class="navbar_link w-nav-link">Product</a>
+                <div class="navbar_cta-tablet"><a href="#" class="button w-inline-block">
+                    <div>Book a demo</div>
+                  </a></div>
+              </nav>
+            </div>
+            <div class="navbar_right-col">
+              <div class="button-group is-navbar-cta"><a href="#" class="button is-text is-navbar w-inline-block">
+                  <div class="text-weight-medium">Log in</div>
+                  <div class="svg-icon _20x20 w-embed"><svg width="100%" height="100%" viewBox="0 0 21 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.69995 13.5999L12.3 9.9999L8.69995 6.3999" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></div>
+                </a><a href="#" class="button is-secondary is-navbar w-inline-block">
+                  <div class="text-weight-medium">Book a demo</div>
+                </a></div>
+              <div class="menu-button w-nav-button">
+                <div class="menu-button_inner-wrap">
+                  <div class="svg-icon is-menu-button-open w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.25 3.75C1.83579 3.75 1.5 4.08579 1.5 4.5C1.5 4.91421 1.83579 5.25 2.25 5.25H15.75C16.1642 5.25 16.5 4.91421 16.5 4.5C16.5 4.08579 16.1642 3.75 15.75 3.75H2.25Z"
+                        fill="currentColor" />
+                      <path
+                        d="M1.5 9C1.5 8.58579 1.83579 8.25 2.25 8.25H15.75C16.1642 8.25 16.5 8.58579 16.5 9C16.5 9.41421 16.1642 9.75 15.75 9.75H2.25C1.83579 9.75 1.5 9.41421 1.5 9Z"
+                        fill="currentColor" />
+                      <path
+                        d="M1.5 13.5C1.5 13.0858 1.83579 12.75 2.25 12.75H15.75C16.1642 12.75 16.5 13.0858 16.5 13.5C16.5 13.9142 16.1642 14.25 15.75 14.25H2.25C1.83579 14.25 1.5 13.9142 1.5 13.5Z"
+                        fill="currentColor" />
+                    </svg></div>
+                  <div class="svg-icon is-menu-button-close w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="7299d954-2414-04b8-99f5-f4b6510c686c" class="navbar_shadow"></div>
+        <div class="navbar_overlay-bg"></div>
+      </div>
+
+
+
+      <section data-nav-trigger="" class="section is-home-hero" id="home">
+        <div class="w-layout-blockcontainer container-large w-container">
+          <div class="home-hero-wrap" style="max-width: 70rem;">
+
+            <div class="text-color-alternate">
+              <div><img style="width: 15%;" src="images/logo_white.png" /></div>
+              <h1 class="hero-tony">
+                "Hey, I’m Tony AI — Here to Boost Your Agency's Success with<br /><span class="text-color-green">Smart
+                  Data</span> + <span class="text-color-green">AI</span>"</h1>
+            </div>
+            <div class="text-color-purple-100">
+              <div class="text-size-large mobile-text-regular hero-tagline">Tony AI helps you manage your HHC agency
+                smarter and faster. Centralize your data, streamline operations, and leverage AI-powered insights for
+                better decisions and growth
+              </div>
+              <div class="home-hero_button-group">
+                <div class="button-group">
+                  <div class="button-group_col-grow hero-button"><a href="#"
+                      class="button is-primary-light w-button">Request a demo</a></div>
+                </div>
+              </div>
+              <div class="home-hero_feature hero-features">
+                <div class="home-hero-feature_item">
+                  <div class="svg-icon _20x20 w-embed"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.49748 3.34466C9.93162 3.02063 11.4321 3.16888 12.7751 3.76728C13.1573 3.93757 13.6051 3.7658 13.7754 3.38363C13.9457 3.00145 13.7739 2.55359 13.3917 2.3833C11.7503 1.65192 9.9164 1.47073 8.16357 1.86676C6.41073 2.26279 4.83287 3.21482 3.66531 4.58086C2.49775 5.9469 1.80305 7.65377 1.68481 9.44689C1.56657 11.24 2.03114 13.0233 3.00921 14.5309C3.98729 16.0384 5.42648 17.1894 7.11214 17.8121C8.79779 18.4349 10.6396 18.4961 12.3629 17.9865C14.0861 17.477 15.5985 16.4241 16.6745 14.9848C17.7505 13.5455 18.3324 11.7965 18.3334 9.99953V9.30256C18.3334 8.88416 17.9942 8.54499 17.5758 8.54499C17.1574 8.54499 16.8183 8.88416 16.8183 9.30256V9.9991C16.8174 11.4694 16.3413 12.9 15.461 14.0776C14.5806 15.2552 13.3432 16.1167 11.9333 16.5336C10.5233 16.9505 9.01639 16.9004 7.63722 16.3909C6.25804 15.8813 5.08053 14.9396 4.28028 13.7062C3.48004 12.4728 3.09994 11.0137 3.19668 9.54659C3.29342 8.07948 3.86181 6.68296 4.81709 5.56529C5.77237 4.44761 7.06334 3.66868 8.49748 3.34466ZM18.1118 4.47436C18.4075 4.17836 18.4072 3.69869 18.1112 3.40298C17.8152 3.10728 17.3356 3.10752 17.0399 3.40352L9.99981 10.4506L8.26304 8.71385C7.96719 8.418 7.48752 8.418 7.19166 8.71385C6.89581 9.00971 6.89581 9.48938 7.19166 9.78523L9.46439 12.058C9.60651 12.2001 9.79928 12.2799 10.0003 12.2798C10.2013 12.2798 10.394 12.1999 10.536 12.0577L18.1118 4.47436Z"
+                        fill="currentColor" />
+                    </svg></div>
+                  <div class="text-size-regular">Real-Time Data Sync</div>
+                </div>
+                <div class="home-hero-feature_item">
+                  <div class="svg-icon _20x20 w-embed"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.49748 3.34466C9.93162 3.02063 11.4321 3.16888 12.7751 3.76728C13.1573 3.93757 13.6051 3.7658 13.7754 3.38363C13.9457 3.00145 13.7739 2.55359 13.3917 2.3833C11.7503 1.65192 9.9164 1.47073 8.16357 1.86676C6.41073 2.26279 4.83287 3.21482 3.66531 4.58086C2.49775 5.9469 1.80305 7.65377 1.68481 9.44689C1.56657 11.24 2.03114 13.0233 3.00921 14.5309C3.98729 16.0384 5.42648 17.1894 7.11214 17.8121C8.79779 18.4349 10.6396 18.4961 12.3629 17.9865C14.0861 17.477 15.5985 16.4241 16.6745 14.9848C17.7505 13.5455 18.3324 11.7965 18.3334 9.99953V9.30256C18.3334 8.88416 17.9942 8.54499 17.5758 8.54499C17.1574 8.54499 16.8183 8.88416 16.8183 9.30256V9.9991C16.8174 11.4694 16.3413 12.9 15.461 14.0776C14.5806 15.2552 13.3432 16.1167 11.9333 16.5336C10.5233 16.9505 9.01639 16.9004 7.63722 16.3909C6.25804 15.8813 5.08053 14.9396 4.28028 13.7062C3.48004 12.4728 3.09994 11.0137 3.19668 9.54659C3.29342 8.07948 3.86181 6.68296 4.81709 5.56529C5.77237 4.44761 7.06334 3.66868 8.49748 3.34466ZM18.1118 4.47436C18.4075 4.17836 18.4072 3.69869 18.1112 3.40298C17.8152 3.10728 17.3356 3.10752 17.0399 3.40352L9.99981 10.4506L8.26304 8.71385C7.96719 8.418 7.48752 8.418 7.19166 8.71385C6.89581 9.00971 6.89581 9.48938 7.19166 9.78523L9.46439 12.058C9.60651 12.2001 9.79928 12.2799 10.0003 12.2798C10.2013 12.2798 10.394 12.1999 10.536 12.0577L18.1118 4.47436Z"
+                        fill="currentColor" />
+                    </svg></div>
+                  <div class="text-size-regular">10+ Software Integrations</div>
+                </div>
+                <div class="home-hero-feature_item">
+                  <div class="svg-icon _20x20 w-embed"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.49748 3.34466C9.93162 3.02063 11.4321 3.16888 12.7751 3.76728C13.1573 3.93757 13.6051 3.7658 13.7754 3.38363C13.9457 3.00145 13.7739 2.55359 13.3917 2.3833C11.7503 1.65192 9.9164 1.47073 8.16357 1.86676C6.41073 2.26279 4.83287 3.21482 3.66531 4.58086C2.49775 5.9469 1.80305 7.65377 1.68481 9.44689C1.56657 11.24 2.03114 13.0233 3.00921 14.5309C3.98729 16.0384 5.42648 17.1894 7.11214 17.8121C8.79779 18.4349 10.6396 18.4961 12.3629 17.9865C14.0861 17.477 15.5985 16.4241 16.6745 14.9848C17.7505 13.5455 18.3324 11.7965 18.3334 9.99953V9.30256C18.3334 8.88416 17.9942 8.54499 17.5758 8.54499C17.1574 8.54499 16.8183 8.88416 16.8183 9.30256V9.9991C16.8174 11.4694 16.3413 12.9 15.461 14.0776C14.5806 15.2552 13.3432 16.1167 11.9333 16.5336C10.5233 16.9505 9.01639 16.9004 7.63722 16.3909C6.25804 15.8813 5.08053 14.9396 4.28028 13.7062C3.48004 12.4728 3.09994 11.0137 3.19668 9.54659C3.29342 8.07948 3.86181 6.68296 4.81709 5.56529C5.77237 4.44761 7.06334 3.66868 8.49748 3.34466ZM18.1118 4.47436C18.4075 4.17836 18.4072 3.69869 18.1112 3.40298C17.8152 3.10728 17.3356 3.10752 17.0399 3.40352L9.99981 10.4506L8.26304 8.71385C7.96719 8.418 7.48752 8.418 7.19166 8.71385C6.89581 9.00971 6.89581 9.48938 7.19166 9.78523L9.46439 12.058C9.60651 12.2001 9.79928 12.2799 10.0003 12.2798C10.2013 12.2798 10.394 12.1999 10.536 12.0577L18.1118 4.47436Z"
+                        fill="currentColor" />
+                    </svg></div>
+                  <div class="text-size-regular">30+ Custom Reports</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-hero_ornament-left"><img src="images/hero-or-left.webp" loading="eager" alt=""
+              class="image-full is-h-auto" /></div>
+          <div class="home-hero_ornament-right"><img src="images/hero-or-right.webp" loading="eager"
+              sizes="(max-width: 767px) 100vw, 356px"
+              srcset="images/hero-orn-right.png 500w, images/hero-right-orn-webp.webp 709w" alt=""
+              class="image-full is-h-auto" /></div>
+          <div class="home-hero_ornament-right is-mobile"><img src="images/hero-pattern-mob.webp" loading="eager"
+              width="160" height="638" alt="" class="image-full is-h-auto" /></div>
+      </section>
+
+
+
+      <!--eND OF Her0-->
+
+      <section class="section is-home-offering" id="how">
+        <div class="section_container-card">
+          <div class="w-layout-blockcontainer container-medium w-container">
+            <div class="max-w-76rem">
+
+              <div class="section-heading is-center">
+                <div class="section-heading_sub">
+                  <div>How Tony AI Works</div>
+                </div>
+                <div class="section-heading_title">
+                  <h2>Connect, Sync, Assist</h2>
+                </div>
+                <div class="section-heading_body is-maxw-48rem">
+                  <p>Tony AI is your <b>web-based assistant</b> that connects all your home health management tools,
+                    syncs data, and delivers real-time insights and excellent guidance for agency operations through a
+                    chat interface. From patient care to billing, Tony simplifies it all, ensuring your agency runs
+                    smoothly.</p>
+                </div>
+              </div>
+              <div class="section-content is-wl-solutions">
+                <div class="wl-solutions-content" style="max-width: 100%;"><img src="images/how-it-works.png"
+                    alt="WL Solutions" class="image-full"></div>
+              </div>
+              <div class="h-offering_card-wrap" style="margin-top: 4rem;">
+                <div class="h-offering_card">
+                  <div class="h-offering_card-icon"><img src="images/icon4.webp" loading="lazy" alt="Offer Card Icon 1"
+                      class="image-full" /></div>
+                  <div class="h-offering_card-title">
+                    <h5 class="heading-style-h5 is-desktop-size">Connect Your Tools</h5>
+                  </div>
+                  <div class="h-offering_card-paragraph">
+                    <p>Connecting Tony AI is easy. Share your credentials for scheduling, billing, and more, and our
+                      team handles the setup. Prefer DIY? Our simple tools let you do it yourself. Seamless integration,
+                      so you can focus on what matters.</p>
+                  </div>
+                </div>
+
+                <div class="h-offering_card">
+                  <div class="h-offering_card-icon"><img src="images/icon2.webp" loading="lazy" alt="Offer Card Icon 2"
+                      class="image-full" /></div>
+                  <div class="h-offering_card-title">
+                    <h5 class="heading-style-h5 is-desktop-size">Sync and Centralize</h5>
+                  </div>
+                  <div class="h-offering_card-paragraph">
+                    <p>Tony AI keeps your data in sync, from scheduling to billing, always up-to-date and accurate.
+                      Think of it as your proactive partner, ensuring your agency runs smoothly with all the data and
+                      assistance at your fingertips.</p>
+                  </div>
+                </div>
+                <div class="h-offering_card">
+                  <div class="h-offering_card-icon"><img src="images/icon1.webp" loading="lazy" alt="Offer Card Icon 3"
+                      class="image-full" /></div>
+                  <div class="h-offering_card-title">
+                    <h5 class="heading-style-h5 is-desktop-size">Analyze and Assist</h5>
+                  </div>
+                  <div class="h-offering_card-paragraph">
+                    <p>Tony AI delivers sharp insights for smarter decisions via our web and mobile app. Boost
+                      efficiency, enhance patient care, and grow your agency with guidance that drives revenue, so you
+                      can focus on what truly matters—exceptional care.</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="section_bg is-home-offering"><img src="images/dot-pattern.webp" class="image-full is-h-auto" />
+            </div>
+          </div>
+      </section>
+
+      <!--End of How it works-->
+
+
+
+      <section class="section is-home-why" id="action">
+        <div class="inner-styles is-home-why w-embed">
+          <style>
+            .home-why-tabs_link.w--current,
+            .home-why-tabs_link.w--current .home-why-tabs_link-title,
+            .home-why-tabs_link:hover,
+            .home-why-tabs_link:hover .home-why-tabs_link-title {
+              color: var(--purple--700);
+            }
+
+            .home-why-tabs_link.w--current,
+            .home-why-tabs_link:hover {
+              box-shadow: 0 2px 4px -2px rgba(16, 24, 40, .06), 0 4px 8px -2px rgba(16, 24, 40, .1);
+            }
+          </style>
+        </div>
+        <div class="w-layout-blockcontainer container-medium w-container">
+          <div class="max-w-76rem">
+            <div class="section-heading">
+              <div class="section-heading_sub">
+                <div>TONY IN ACTION</div>
+              </div>
+              <div class="section-heading_title">
+                <h2>Smart data + AI: Your growth catalyst</h2>
+              </div>
+              <div class="section-heading_body is-home-why">
+                <p>Watch Tony AI in action! Tony syncs your latest data—nurse updates, billing, compliance, and
+                  scheduling—and uses advanced AI to deliver actionable insights. Use our web interface to get answers
+                  and valuable insights. Explore sample questions to see how Tony can assist you.</p>
+              </div>
+            </div>
+            <div class="section-content">
+              <div data-current="Tab 1" data-easing="ease" data-duration-in="400" data-duration-out="200"
+                class="home-why-tabs w-tabs">
+                <div class="home-why-tabs_menu w-tab-menu tony_question-side"><a data-w-tab="Tab 1"
+                    class="home-why-tabs_link w-inline-block w-tab-link w--current tony-question-wrap">
+                    <div class="home-why-tabs_link-title">
+                      <div class="text-size-medium is-heading tony-question-heading">Workflow</div>
+                    </div>
+                    <div class="home-why-tabs_link-body">
+                      <div class="text-size-medium tony-question-body">
+                        "Tony, can you give me a breakdown of where the <span class="question-hl"
+                          style="color: #0054FC;">money</span> is getting stuck in the <span class="question-hl"
+                          style="color: #0054FC;">patient intake</span> and processing across our branches?"</div>
+                    </div>
+                  </a><a data-w-tab="Tab 2" class="home-why-tabs_link w-inline-block w-tab-link tony-question-wrap">
+                    <div class="home-why-tabs_link-title">
+                      <div class="text-size-medium is-heading tony-question-heading">Scheduling</div>
+                    </div>
+                    <div class="home-why-tabs_link-body">
+                      <div class="text-size-medium tony-question-body">"Tony, can you show me the <span
+                          class="question-hl" style="color: #FF6F61;">schedules</span> for the patient <span
+                          class="question-hl" style="color: #FF6F61;">Zack Murphy</span>, including the visit status and
+                        the episode calendar?"</div>
+                    </div>
+                  </a><a data-w-tab="Tab 3" class="home-why-tabs_link w-inline-block w-tab-link tony-question-wrap">
+                    <div class="home-why-tabs_link-title">
+                      <div class="text-size-medium is-heading tony-question-heading">Patient Care</div>
+                    </div>
+                    <div class="home-why-tabs_link-body">
+                      <div class="text-size-medium tony-question-body">"Tony, which patients have pending <span
+                          class="question-hl" style="color: #12b76a;">OASIS recertifications</span> that are approaching
+                        their due date?"</div>
+                    </div>
+                  </a>
+                  <a data-w-tab="Tab 4" class="home-why-tabs_link w-inline-block w-tab-link tony-question-wrap">
+                    <div class="home-why-tabs_link-title">
+                      <div class="text-size-medium is-heading tony-question-heading">Billing</div>
+                    </div>
+                    <div class="home-why-tabs_link-body">
+                      <div class="text-size-medium tony-question-body">"Tony, can you provide a summary of the current
+                        <span class="question-hl" style="color: #E88300;">NOA submission</span> status? Also, could you
+                        let me know where it's stuck?"
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="home-why-tabs_content w-tab-content tony-ss-content">
+                  <div data-w-tab="Tab 1" class="home-why-tabs_pane w-tab-pane w--tab-active">
+
+                    <img src="images/answer-1.png" loading="lazy" alt="" class="image-full" />
+
+
+
+                  </div>
+                  <div data-w-tab="Tab 2" class="home-why-tabs_pane w-tab-pane">
+                    <img src="images/answer-2.png" loading="lazy" alt="" class="image-full" />
+                  </div>
+                  <div data-w-tab="Tab 3" class="home-why-tabs_pane w-tab-pane"><img src="images/answer-3.png"
+                      loading="lazy" alt="" class="image-full" /></div>
+
+                  <div data-w-tab="Tab 4" class="home-why-tabs_pane w-tab-pane"><img src="images/answer-4.png"
+                      loading="lazy" alt="" class="image-full" /></div>
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="section_bg is-home-why"><img src="images/ask-bg.webp" class="image-full is-h-auto" /></div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class="section is-home-offering" id="product">
+        <div class="section_container-card">
+          <div class="w-layout-blockcontainer container-medium w-container">
+            <div class="max-w-76rem">
+              <div class="section-heading is-center">
+                <div class="section-heading_sub">
+                  <div>PRODUCT OFFERINGS</div>
+                </div>
+                <div class="section-heading_title is-home-offering">
+                  <h2>Unify Your Data with AI.<br />Elevate Your Agency.</h2>
+                </div>
+              </div>
+              <div class="section-content is-home-offering">
+                <div class="h-offering_card-wrap">
+                  <div class="h-offering_card">
+                    <div class="h-offering_card-icon"><img
+                        src="images/product_icon2.webp"
+                        loading="lazy" alt="Offer Card Icon 1" class="image-full" /></div>
+                    <div class="h-offering_card-title">
+                      <h5 class="heading-style-h5 is-desktop-size">Integrate</h5>
+                    </div>
+                    <div class="h-offering_card-paragraph">
+                      <p>Seamlessly connect and sync data from your existing software systems. Tony AI consolidates
+                        information from tools like Kinnser and Well Sky into one unified platform.</p>
+                    </div>
+                  </div>
+                  <div class="h-offering_card">
+                    <div class="h-offering_card-icon"><img
+                        src="images/product_icon1.webp"
+                        loading="lazy" alt="Offer Card Icon 2" class="image-full" /></div>
+                    <div class="h-offering_card-title">
+                      <h5 class="heading-style-h5 is-desktop-size">Analyze</h5>
+                    </div>
+                    <div class="h-offering_card-paragraph">
+                      <p>Unlock actionable insights with Tony AI’s advanced analytics. Our AI-driven reports and
+                        dashboards help you understand patient care, billing, and more to make data-driven decisions.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="h-offering_card">
+                    <div class="h-offering_card-icon"><img
+                        src="images/product_icon3.webp"
+                        loading="lazy" alt="Offer Card Icon 3" class="image-full" /></div>
+                    <div class="h-offering_card-title">
+                      <h5 class="heading-style-h5 is-desktop-size">Engage</h5>
+                    </div>
+                    <div class="h-offering_card-paragraph">
+                      <p>Enhance your agency’s performance with Tony AI’s smart tools. Interact for actionable insights
+                        and AI-driven recommendations to optimize workflows and drive sustainable growth.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-offering_outer-card">
+                  <div class="h-offering_card is-brand">
+                    <div class="h-offering_card-brand"><img
+                        src="images/logo-box.png"
+                        loading="lazy" alt="Tony" class="image-full" /></div>
+                  </div>
+                  <div class="h-offering_pattern-1"><img
+                      src="images/pattern1.webp"
+                      loading="lazy" sizes="(max-width: 991px) 100vw, 87vw"
+                      srcset="images/pattern2.png 500w, https://cdn.prod.website-files.com/664171fa923a2686fc4baa2e/664358db6aefaa02b2102c0e_Home%20Offering%20Pattern%201-p-800.png 800w, https://cdn.prod.website-files.com/664171fa923a2686fc4baa2e/664358db6aefaa02b2102c0e_Home%20Offering%20Pattern%201.webp 1601w"
+                      alt="" class="image-full" /></div>
+                  <div class="h-offering_pattern-1 is-tablet"><img
+                      src="images/pattern3.png"
+                      loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 991px) 360px, 100vw"
+                      srcset="images/pattern4.png 500w, https://cdn.prod.website-files.com/664171fa923a2686fc4baa2e/66447eebe09ed5842467b066_Home%20Offering%20Pattern%201%20Mobile-p-800.png 800w, https://cdn.prod.website-files.com/664171fa923a2686fc4baa2e/66447eebe09ed5842467b066_Home%20Offering%20Pattern%201%20Mobile-p-1080.png 1080w, https://cdn.prod.website-files.com/664171fa923a2686fc4baa2e/66447eebe09ed5842467b066_Home%20Offering%20Pattern%201%20Mobile.png 1453w"
+                      alt="" class="image-full is-fill" /></div>
+                </div>
+                <div class="h-offering_card is-big">
+                  <h3>Unified Insights & Collaboration</h3>
+                  <div class="h-offering_card-paragraph is-card-big">
+                    <p>Tony AI combines data from all your systems into one platform, providing AI-driven insights that enhance workflows, drive growth, and foster team collaboration across the entire agency.</p>
+                  </div>
+                  <div class="h-offering__card-pattern"><img
+                      src="images/gp1.webp"
+                      loading="lazy" alt="Home Offering Pattern Card" class="image-full is-cover" /></div>
+                  <div class="h-offering__card-pattern is-right"><img
+                      src="images/gp2.webp"
+                      loading="lazy" alt="" class="image-full is-cover" /></div>
+                </div>
+                <div class="h-offering_card-wrap">
+                  <div class="h-offering_card is-small">
+                    <div class="h-offering_card-icon _48x48"><img
+                        src="images/ic1.webp"
+                        loading="lazy" alt="Offer Card Icon 4" class="image-full" /></div>
+                    <div class="h-offering_card-title is-card-small">
+                      <h5 class="heading-style-h5 is-desktop-size">Workflows</h5>
+                    </div>
+                  </div>
+                  <div class="h-offering_card is-small">
+                    <div class="h-offering_card-icon _48x48"><img
+                        src="images/ic2.webp"
+                        loading="lazy" alt="Offer Card Icon 5" class="image-full" /></div>
+                    <div class="h-offering_card-title is-card-small">
+                      <h5 class="heading-style-h5 is-desktop-size">Reporting</h5>
+                    </div>
+                  </div>
+                  <div class="h-offering_card is-small">
+                    <div class="h-offering_card-icon _48x48"><img
+                        src="images/ic3.webp"
+                        loading="lazy" alt="Offer Card Icon 6" class="image-full" /></div>
+                    <div class="h-offering_card-title is-card-small">
+                      <h5 class="heading-style-h5 is-desktop-size">AI Intelligence</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-offering_pattern-2"><img
+                    src="images/dot1.webp"
+                    alt="" class="image-full" /></div>
+                <div class="h-offering_pattern-2 is-tablet"><img
+                    src="images/dot3.png"
+                    alt="" class="image-full is-fill" /></div>
+                <div class="h-offering_avatars"><img
+                    src="images/clients.png"
+                    loading="lazy" alt="Home Offering Avatar" class="image-full" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="section_bg is-home-offering"><img
+              src="images/bigdot.webp"
+              alt="" class="image-full is-h-auto" /></div>
+        </div>
+      </section>
+
+
+      <footer class="section is-footer">
+        <div class="w-layout-blockcontainer container-medium w-container">
+          <div class="footer-wrap">
+
+            <div class="footer_bottom-wrap">
+              <div class="footer_bottom-inner-wrap"><a href="/" aria-current="page"
+                  class="footer_brand w-inline-block w--current"><img
+                    src="images/logo-box.png"
+                    loading="lazy" alt="Tony" class="image-full is-w-auto" /></a>
+                <div class="line-separator-vertical"></div><a href="https://www.linkedin.com/in/mattgeorge88/"
+                  target="_blank" class="svg-icon _20x20 w-inline-block"><img
+                    src="images/ln.svg"
+                    loading="lazy" alt="linkedin" class="image-full" /></a>
+              </div>
+              <div class="footer_bottom-inner-wrap is-wrap">
+                <div class="footer_copy">
+                  <div>© 2024 Matthew George</div>
+                </div>
+                <div class="hide-mobile-landscape">
+                  <div class="line-separator-vertical"></div>
+                </div>
+                <div class="footer_certif-wrap">
+                  <div class="footer_certif"><img
+                      src="images/f1.webp"
+                      loading="lazy" alt="SOC" class="image-full is-w-auto" /></div>
+                  <div class="footer_certif"><img
+                      src="images/f2.webp"
+                      loading="lazy" alt="" class="image-full is-w-auto" /></div>
+                  <div class="footer_certif"><img
+                      src="images/f3.webp"
+                      loading="lazy" alt="" class="image-full is-w-auto" /></div>
+                  <div class="footer_certif"><img
+                      src="images/f4.webp"
+                      loading="lazy" alt="" class="image-full is-w-auto" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('[data-highlighted-text]').forEach(heading => {
+        const className = heading.getAttribute('data-highlighted-class') || 'text-color-green'
+
+        heading.innerHTML = heading.textContent.replace(
+          new RegExp(`(${heading.getAttribute('data-highlighted-text')})`, 'gi'),
+          `<span class="${className}">$1</span>`
+        );
+      });
+    });
+  </script>
+
+  <script>
+    function navbarOnScroll(scroll = true) {
+      let defaultTriggerScrollTop = 0;
+
+      let scrollTop = $(window).scrollTop();
+      let triggerElement = $(document).find('[data-nav-trigger]');
+      let triggerScrollTop = triggerElement.length ? (triggerElement.outerHeight() - 88) : defaultTriggerScrollTop;
+
+      if (scrollTop >= triggerScrollTop) {
+        $(".navbar.w-nav").addClass("is-white");
+      } else {
+        $(".navbar.w-nav").removeClass("is-white");
+      }
+
+      if (!scroll && !triggerElement.length) {
+        $(".navbar.w-nav").addClass("is-white");
+      }
+    }
+
+    $(window).scroll(function () {
+      navbarOnScroll();
+    });
+
+    navbarOnScroll(false);
+  </script>
+</body>
+
+</html>

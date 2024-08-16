@@ -1,0 +1,77 @@
+body {
+  font-family: "Lexend", sans-serif !important;
+  font-optical-sizing: auto;
+}
+
+.hero-tony {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.hero-tagline {
+  font-weight: 300;
+  margin-bottom: 35px;
+  max-width: 50rem;
+}
+
+.hero-button {
+  align-items: center;
+}
+
+.hero-features {
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.intro_to_tony {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.highlight-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.action-div {
+  border-radius: 10px;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid #E6D9FD;
+  /* Adjust border width and color as needed */
+  background-color: #F5EAFF;
+  /* Adjust background color as needed */
+}
+
+.tony-talk {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.chat-content {
+  margin-left: 55px;
+}
+
+.tony-ss-content {
+  flex: 3;
+}
+
+.tony-question-body {
+  font-size: 1.1rem !important;
+    line-height: 1.5rem;
+}
+
+.tony-question-wrap {
+  padding: 1rem 1rem;
+}
+.tony_question-side {
+  padding-right: 1rem;
+  align-self: flex-start;
+}
+.tony-question-heading{
+  font-size: 1.2rem;
+}
+.question-hl{
+  font-weight: 600;
+}
